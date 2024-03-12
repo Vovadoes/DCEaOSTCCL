@@ -209,9 +209,9 @@ class Finish(QtWidgets.QDialog):
         types_matrix_results_1 = [[float] * loader_results_1_n]
         loader_results_1_block = True
         loader_results_1_heading_x = lambda iterator: \
-            [f"ОП{get_sub('1')} - F{get_sub('1')}", f"H{get_sub('1')} - F{get_sub('1')}",
+            [f"ОП{get_sub('1')} - F{get_sub('1')}", f"H{get_sub('1')} - F{get_sub('1')} = f{get_sub('1')}",
              f"ОП{get_sub('1')} - H{get_sub('1')}", f"ОП{get_sub('2')} - F{get_sub('2')}",
-             f"H{get_sub('2')} - F{get_sub('2')}", f"ОП{get_sub('2')} - H{get_sub('2')}"][iterator]
+             f"H{get_sub('2')} - F{get_sub('2')} = f{get_sub('2')}", f"ОП{get_sub('2')} - H{get_sub('2')}"][iterator]
         loader_results_1_heading_y = lambda iterator: str(iterator)
         self.table_loader_results_1 = TableLoader(
             self.parent, loader_results_1_n, loader_results_1_m, data=loader_results_1_data,

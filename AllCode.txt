@@ -646,9 +646,9 @@ class Finish(QtWidgets.QDialog):
         types_matrix_results_1 = [[float] * loader_results_1_n]
         loader_results_1_block = True
         loader_results_1_heading_x = lambda iterator: \
-            [f"ОП{get_sub('1')} - F{get_sub('1')}", f"H{get_sub('1')} - F{get_sub('1')}",
+            [f"ОП{get_sub('1')} - F{get_sub('1')}", f"H{get_sub('1')} - F{get_sub('1')} = f{get_sub('1')}",
              f"ОП{get_sub('1')} - H{get_sub('1')}", f"ОП{get_sub('2')} - F{get_sub('2')}",
-             f"H{get_sub('2')} - F{get_sub('2')}", f"ОП{get_sub('2')} - H{get_sub('2')}"][iterator]
+             f"H{get_sub('2')} - F{get_sub('2')} = f{get_sub('2')}", f"ОП{get_sub('2')} - H{get_sub('2')}"][iterator]
         loader_results_1_heading_y = lambda iterator: str(iterator)
         self.table_loader_results_1 = TableLoader(
             self.parent, loader_results_1_n, loader_results_1_m, data=loader_results_1_data,
@@ -730,6 +730,7 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
         font.setPointSize(14)
+        font.setItalic(True)
         self.label_41.setFont(font)
         self.label_41.setObjectName("label_41")
         self.gridLayout_10.addWidget(self.label_41, 0, 1, 1, 1)
@@ -785,6 +786,7 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
         font.setPointSize(14)
+        font.setItalic(True)
         self.label_45.setFont(font)
         self.label_45.setObjectName("label_45")
         self.gridLayout_11.addWidget(self.label_45, 0, 1, 1, 1)
@@ -840,6 +842,7 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
         font.setPointSize(14)
+        font.setItalic(True)
         self.label_50.setFont(font)
         self.label_50.setObjectName("label_50")
         self.gridLayout_12.addWidget(self.label_50, 0, 1, 1, 1)
@@ -908,6 +911,7 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
         font.setPointSize(14)
+        font.setItalic(True)
         self.label_55.setFont(font)
         self.label_55.setObjectName("label_55")
         self.gridLayout_13.addWidget(self.label_55, 0, 1, 1, 1)
@@ -967,6 +971,7 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
         font.setPointSize(14)
+        font.setItalic(True)
         self.label_60.setFont(font)
         self.label_60.setObjectName("label_60")
         self.gridLayout_14.addWidget(self.label_60, 0, 1, 1, 1)
@@ -979,6 +984,7 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
         font.setPointSize(14)
+        font.setItalic(True)
         self.label_65.setFont(font)
         self.label_65.setObjectName("label_65")
         self.gridLayout_15.addWidget(self.label_65, 0, 1, 1, 1)
@@ -1129,6 +1135,7 @@ class Ui_Form(object):
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
         font.setPointSize(14)
+        font.setItalic(True)
         self.label_37.setFont(font)
         self.label_37.setObjectName("label_37")
         self.gridLayout_17.addWidget(self.label_37, 0, 1, 1, 1)

@@ -72,6 +72,7 @@ class Ui_Form(object):
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
         font.setPointSize(14)
+        font.setItalic(True)
         self.label_37.setFont(font)
         self.label_37.setObjectName("label_37")
         self.gridLayout_17.addWidget(self.label_37, 0, 1, 1, 1)
